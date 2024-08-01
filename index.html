@@ -7,61 +7,85 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
         <header>
             <div class="logo-icon">Blossom & Bloom</div>
-
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </header>
 
         <section class="nav-container">
-            <a class="nav-item">Home</a>
-            <a class="nav-item">Product</a>
-            <a class="nav-item">Review</a>
-            <a class="nav-item">Contact Us</a>
+            <ul>
+                <li>
+                    <a href="#home" class="active">Home</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#product" class="">Product</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="" class="">Review</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="" class="">Contact Us</a>
+                </li>
+            </ul>
         </section>
     </nav>
 
     <main>
-        <article class="main-title">
+        <article class="main-title" id="home">
             <header>
                 <h1>Bloom with Us</h1>
             </header>
-
             <p>Your joy is our blossom</p>
-
         </article>
 
         <section class="main-content">
+            <div class="main-content-title">
+                <h1>Our Services</h1>
+                <hr class="custom-hr">
+            </div>
             <article class="main-content-item">
-                <div class="main-content-title">
-                    <h1>Our Services</h1>
-                    <hr class="custom-hr">
-                </div>
 
                 <div class="main-item">
                     <div class="main-content-features">
                         <div class="features-box">
-                            <div class="item-icon"></div>
+                            <div class="item-icon">
+                                <img src="/assets/icons8-easy-payment-64.png" alt="">
+                            </div>
                             <div class="features-desc">
                                 <h4>Easy Payment</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
                         <div class="features-box">
-                            <div class="item-icon"></div>
+                            <div class="item-icon">
+                                <img src="/assets/icons8-fast-delivery-64.png" alt="">
+                            </div>
                             <div class="features-desc">
                                 <h4>Fast Delivery</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
                         <div class="features-box">
-                            <div class="item-icon"></div>
+                            <div class="item-icon">
+                                <img src="/assets/icons8-packet-96.png" alt="">
+                            </div>
                             <div class="features-desc">
-                                <h4>Package Protection</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                <h4>Extra Protection</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
                     </div>
@@ -69,16 +93,82 @@
             </article>
         </section>
 
-        <section class="main-banner">
+        <section class="main-banner" id="product">
             <div class="main-banner-item">
                 <div class="main-banner-title">
                     <h1>Our Product</h1>
+                    <hr class="custom-hr">
                 </div>
 
-                <div class="banner-item"></div>
+                <div class="banner-item">
+                    <div class="banner-item-1">
+                        <div class="banner-item-img">
+                            <img src="/assets/pink rose.jpg" alt="">
+                        </div>
+                        <div class="banner-item-desc">
+                            <h1>Fresh Flower</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident maiores sequi voluptate sapiente exercitationem, doloribus magnam voluptatum asperiores. Culpa rerum sint fugiat sequi numquam similique doloribus blanditiis cum nisi! Laborum.</p>
+                            <div class="btn-banner">
+                                <button><a href="">Lihat produk</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-item-2">
+                        <div class="banner-item-img">
+                            <img src="/assets/boquet brown.jpg" alt="">
+                        </div>
+                        <div class="banner-item-desc">
+                            <h1>Boquet of Flower</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam architecto nam ipsum nesciunt ipsa culpa vero eveniet. Earum totam molestias libero, nam ad et blanditiis ea saepe, qui, nulla ex?</p>
+                            <div class="btn-banner">
+                                <button><a href="">Lihat produk</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section class="review-menu" id="review">
+            <div class="main-content-title">
+                <h1>Client Review</h1>
+                <hr class="custom-hr">
+            </div>
+            <div class="main-item">
+                <div class="main-content-features">
+                    <div class="review-box">
+                        <div class="review-icon"></div>
+                        <div class="review-desc">
+                            <h4>Easy Payment</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="review-box">
+                        <div class="review-icon"></div>
+                        <div class="review-desc">
+                            <h4>Fast Delivery</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="review-box">
+                        <div class="review-icon"></div>
+                        <div class="review-desc">
+                            <h4>Extra Protection</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
     
+    <script src="/js/script.js">
+        const hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-container");
+            navBar.classList.toggle("active")
+        }
+    </script>
 </body>
 </html>
